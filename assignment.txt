@@ -1,0 +1,104 @@
+Portfolio Page - Build Guide
+
+Follow these steps in order, don't skip ahead, each step builds on the last.
+
+PART 1 - SET UP FILES
+
+1. Create a new folder called portfolio.
+2. Inside it, create two files: index.html and style.css.
+3. In index.html, write the basic HTML boilerplate (DOCTYPE, html, head, body).
+4. Inside the head, link the CSS file using a link tag.
+5. Give the page a title, something like "My Portfolio".
+
+PART 2 - BUILD THE HTML STRUCTURE
+
+Now build the skeleton, piece by piece.
+
+6. Inside body, create one big container: div class="container". Everything else goes inside this div.
+
+7. Inside the container, build the header:
+- Add a header tag.
+- Inside it, put an h1 with my name.
+- Under that, put a p with a tagline (e.g. "Front-End Developer in Training").
+
+8. Right after the header, build 4 divs, each with class="section", one for each of these:
+- About Me
+- Skills
+- Projects
+- Contact
+
+So: div class="section" id="about", div class="section" id="skills", div class="section" id="projects", div class="section" id="contact". Close each one with /div before starting the next.
+
+9. Fill in the About Me div:
+- Add an h2 that says "About Me".
+- Add an img tag pointing to a photo or placeholder image.
+- Add 2-3 p tags with a short bio.
+
+10. Fill in the Skills div:
+- Add an h2 that says "Skills".
+- Add a ul with at least 5 li items, one skill each.
+
+11. Fill in the Projects div:
+- Add an h2 that says "Projects".
+- Inside this div, build 2 smaller divs with class="project".
+- Inside each .project div, add an h3 (project title), a p (description), and an a (link, can be href="#" for now).
+
+12. Fill in the Contact div:
+- Add an h2 that says "Contact Me".
+- Add a p or ul with my email and any social links.
+
+13. After the container div closes, add a footer tag with a p inside it saying something like "© 2026 [my name]".
+
+At this point, save and open index.html in the browser. It'll look like plain stacked text, that's expected. Now style it.
+
+PART 3 - STYLE THE PAGE (CSS)
+
+Open style.css and work through these one at a time, refreshing the browser after each step to see the change.
+
+14. Style the body:
+- Set a font-family.
+- Set a background-color.
+- Set margin: 0 so there's no default browser gap around the edges.
+
+15. Style the .container:
+- Give it a max-width (like 800px) so the text doesn't stretch too wide.
+- Add margin: 0 auto to center it on the page.
+- Add some padding.
+
+16. Style the header:
+- Add padding.
+- Add a background-color different from the body.
+- Add text-align: center.
+
+17. Style .section:
+- Add padding and margin-bottom so each section has breathing room.
+- Add a border around each section.
+- Add border-radius to round the corners.
+
+18. Style the img in the About section:
+- Set a fixed width (like 150px).
+- Add border-radius: 50% to make it circular.
+- Add a border.
+
+19. Style .project:
+- Add padding, a border, and border-radius, same idea as the sections.
+- Add margin-bottom so the two project boxes don't touch.
+
+20. Style the headings:
+- Set a distinct color for h1, h2, and h3 so they're visually different from paragraph text.
+- Adjust font-size for each level if the defaults look off.
+
+21. Style the footer:
+- Add text-align: center, padding, and a background-color.
+
+PART 4 - FINAL CHECK
+
+22. Reload the page and scroll top to bottom. Confirm:
+- Everything stacks in a clean, readable order (no layout tricks needed).
+- Every section has visible spacing, borders, and rounded corners.
+- The image is styled and not stretched or huge.
+- Nothing overlaps or looks cramped.
+
+23. Save both files. Done.
+
+Reminder: don't reach for display: flex, display: grid, position, or float in this one, everything here should be achievable just by letting HTML stack naturally and using spacing/color/borders to organize it visually.
